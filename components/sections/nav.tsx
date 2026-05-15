@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Mail } from "lucide-react";
 
 export function Nav() {
@@ -28,13 +29,13 @@ export function Nav() {
           ))}
         </div>
 
-        <a
-          href="mailto:noah@dasilveira.de"
+        <Link
+          href="/anfrage"
           className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 text-zinc-50 text-xs font-medium hover:bg-zinc-700 transition-colors duration-200 active:scale-95"
         >
           <Mail size={11} />
           Anfragen
-        </a>
+        </Link>
       </div>
     </motion.nav>
   );

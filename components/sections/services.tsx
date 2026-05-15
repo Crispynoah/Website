@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import Link from "next/link";
 import {
   Globe,
   Paintbrush,
@@ -120,13 +121,13 @@ export function Services() {
                   abhängig vom Umfang. Unverbindliche Anfrage genügt.
                 </p>
               </div>
-              <a
-                href="mailto:noah@dasilveira.de"
+              <Link
+                href="/anfrage"
                 className="mt-6 inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors duration-200 group/link"
               >
                 Anfrage stellen
                 <span className="group-hover/link:translate-x-1 transition-transform duration-200">→</span>
-              </a>
+              </Link>
             </div>
           </motion.div>
 

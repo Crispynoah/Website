@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 
@@ -85,12 +86,12 @@ export function About() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <a
-                href="mailto:noah@dasilveira.de"
+              <Link
+                href="/anfrage"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 text-zinc-50 text-sm font-medium hover:bg-zinc-700 transition-all duration-200 active:scale-[0.97]"
               >
-                Schreib mir
-              </a>
+                Projekt anfragen
+              </Link>
               <a
                 href="tel:01604874444"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-zinc-300 text-zinc-600 text-sm font-medium hover:bg-zinc-100 hover:text-zinc-900 transition-all duration-200 active:scale-[0.97]"
