@@ -78,8 +78,8 @@ export function Process() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mb-4 text-center"
         >
-          <p className="text-xs tracking-widest text-zinc-600 uppercase mb-3">Ablauf</p>
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-zinc-50 leading-tight">
+          <p className="text-xs tracking-widest text-zinc-400 uppercase mb-3">Ablauf</p>
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-zinc-900 leading-tight">
             Mein Prozess
           </h2>
           <p className="text-sm text-zinc-500 mt-4 max-w-md mx-auto">

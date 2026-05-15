@@ -10,42 +10,42 @@ export default function Datenschutz() {
     <main className="min-h-screen px-6 py-24 max-w-2xl mx-auto">
       <Link
         href="/"
-        className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors mb-12 inline-block"
+        className="text-xs text-zinc-500 hover:text-zinc-500 transition-colors mb-12 inline-block"
       >
         ← Zurück
       </Link>
 
-      <h1 className="text-3xl font-semibold tracking-tight text-zinc-50 mb-2">
+      <h1 className="text-3xl font-semibold tracking-tight text-zinc-900 mb-2">
         Datenschutzerklärung
       </h1>
-      <p className="text-xs text-zinc-600 mb-10">Stand: Mai 2025</p>
+      <p className="text-xs text-zinc-500 mb-10">Stand: Mai 2025</p>
 
-      <div className="space-y-10 text-sm text-zinc-400 leading-relaxed">
+      <div className="space-y-10 text-sm text-zinc-500 leading-relaxed">
 
         <section className="space-y-2">
-          <h2 className="text-xs tracking-widest text-zinc-600 uppercase mb-3">
+          <h2 className="text-xs tracking-widest text-zinc-500 uppercase mb-3">
             1. Verantwortlicher
           </h2>
           <p>
             Verantwortlicher im Sinne der DSGVO ist:
           </p>
-          <p className="text-zinc-200">
+          <p className="text-zinc-800">
             Noah Karol da Silveira<br />
             Engstenberger Höhe 33<br />
             51519 Odenthal<br />
             E-Mail:{" "}
-            <a href="mailto:noah@dasilveira.de" className="hover:text-zinc-200 transition-colors">
+            <a href="mailto:noah@dasilveira.de" className="hover:text-zinc-800 transition-colors">
               noah@dasilveira.de
             </a><br />
             Telefon:{" "}
-            <a href="tel:01604874444" className="hover:text-zinc-200 transition-colors">
+            <a href="tel:01604874444" className="hover:text-zinc-800 transition-colors">
               0160 4874444
             </a>
           </p>
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-xs tracking-widest text-zinc-600 uppercase mb-3">
+          <h2 className="text-xs tracking-widest text-zinc-500 uppercase mb-3">
             2. Allgemeines zur Datenverarbeitung
           </h2>
           <p>
@@ -60,13 +60,13 @@ export default function Datenschutz() {
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-xs tracking-widest text-zinc-600 uppercase mb-3">
+          <h2 className="text-xs tracking-widest text-zinc-500 uppercase mb-3">
             3. Hosting durch Vercel
           </h2>
           <p>
             Diese Website wird gehostet von:
           </p>
-          <p className="text-zinc-200">
+          <p className="text-zinc-800">
             Vercel Inc.<br />
             340 Pine Street, Suite 701<br />
             San Francisco, CA 94104, USA
@@ -95,7 +95,7 @@ export default function Datenschutz() {
               href="https://vercel.com/legal/privacy-policy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-200 hover:text-zinc-50 transition-colors underline underline-offset-2"
+              className="text-zinc-800 hover:text-zinc-900 transition-colors underline underline-offset-2"
             >
               vercel.com/legal/privacy-policy
             </a>
@@ -104,7 +104,7 @@ export default function Datenschutz() {
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-xs tracking-widest text-zinc-600 uppercase mb-3">
+          <h2 className="text-xs tracking-widest text-zinc-500 uppercase mb-3">
             4. Kontaktaufnahme per E-Mail oder Telefon
           </h2>
           <p>
@@ -122,7 +122,7 @@ export default function Datenschutz() {
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-xs tracking-widest text-zinc-600 uppercase mb-3">
+          <h2 className="text-xs tracking-widest text-zinc-500 uppercase mb-3">
             5. Google Fonts
           </h2>
           <p>
@@ -138,7 +138,7 @@ export default function Datenschutz() {
               href="https://policies.google.com/privacy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-200 hover:text-zinc-50 transition-colors underline underline-offset-2"
+              className="text-zinc-800 hover:text-zinc-900 transition-colors underline underline-offset-2"
             >
               policies.google.com/privacy
             </a>
@@ -147,33 +147,33 @@ export default function Datenschutz() {
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-xs tracking-widest text-zinc-600 uppercase mb-3">
+          <h2 className="text-xs tracking-widest text-zinc-500 uppercase mb-3">
             6. Ihre Rechte
           </h2>
           <p>Sie haben jederzeit das Recht auf:</p>
           <ul className="list-disc list-inside space-y-1 pl-2">
             <li>
-              <span className="text-zinc-200">Auskunft</span> über Ihre bei mir
+              <span className="text-zinc-800">Auskunft</span> über Ihre bei mir
               gespeicherten Daten (Art. 15 DSGVO)
             </li>
             <li>
-              <span className="text-zinc-200">Berichtigung</span> unrichtiger Daten
+              <span className="text-zinc-800">Berichtigung</span> unrichtiger Daten
               (Art. 16 DSGVO)
             </li>
             <li>
-              <span className="text-zinc-200">Löschung</span> Ihrer Daten (Art. 17
+              <span className="text-zinc-800">Löschung</span> Ihrer Daten (Art. 17
               DSGVO)
             </li>
             <li>
-              <span className="text-zinc-200">Einschränkung</span> der Verarbeitung
+              <span className="text-zinc-800">Einschränkung</span> der Verarbeitung
               (Art. 18 DSGVO)
             </li>
             <li>
-              <span className="text-zinc-200">Datenübertragbarkeit</span> (Art. 20
+              <span className="text-zinc-800">Datenübertragbarkeit</span> (Art. 20
               DSGVO)
             </li>
             <li>
-              <span className="text-zinc-200">Widerspruch</span> gegen die Verarbeitung
+              <span className="text-zinc-800">Widerspruch</span> gegen die Verarbeitung
               (Art. 21 DSGVO)
             </li>
           </ul>
@@ -181,7 +181,7 @@ export default function Datenschutz() {
             Zur Ausübung Ihrer Rechte wenden Sie sich an:{" "}
             <a
               href="mailto:noah@dasilveira.de"
-              className="text-zinc-200 hover:text-zinc-50 transition-colors"
+              className="text-zinc-800 hover:text-zinc-900 transition-colors"
             >
               noah@dasilveira.de
             </a>
@@ -195,7 +195,7 @@ export default function Datenschutz() {
               href="https://www.ldi.nrw.de"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-200 hover:text-zinc-50 transition-colors underline underline-offset-2"
+              className="text-zinc-800 hover:text-zinc-900 transition-colors underline underline-offset-2"
             >
               www.ldi.nrw.de
             </a>
@@ -204,7 +204,7 @@ export default function Datenschutz() {
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-xs tracking-widest text-zinc-600 uppercase mb-3">
+          <h2 className="text-xs tracking-widest text-zinc-500 uppercase mb-3">
             7. Datensicherheit
           </h2>
           <p>

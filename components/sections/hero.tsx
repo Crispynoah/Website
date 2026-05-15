@@ -12,7 +12,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <BackgroundPaths />
 
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.03)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.02)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-20 items-center">
@@ -22,8 +22,8 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/3 text-xs text-zinc-400 tracking-wide">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-200 bg-zinc-100 text-xs text-zinc-500 tracking-wide">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 Verfügbar für neue Projekte
               </span>
             </motion.div>
@@ -42,7 +42,7 @@ export function Hero() {
                         stiffness: 160,
                         damping: 28,
                       }}
-                      className="inline-block text-zinc-50"
+                      className="inline-block text-zinc-900"
                     >
                       {letter}
                     </motion.span>
@@ -55,7 +55,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
-              className="text-lg text-zinc-400 max-w-xl leading-relaxed"
+              className="text-lg text-zinc-500 max-w-xl leading-relaxed"
             >
               Ich entwickle moderne, professionelle Webauftritte für Unternehmen,
               Selbstständige und lokale Betriebe — damit Sie online so wirken, wie
@@ -70,14 +70,14 @@ export function Hero() {
             >
               <a
                 href="mailto:noah@dasilveira.de"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-zinc-50 text-zinc-950 text-sm font-medium hover:bg-zinc-200 transition-all duration-200 active:scale-[0.97] shadow-lg shadow-black/30"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 text-zinc-50 text-sm font-medium hover:bg-zinc-700 transition-all duration-200 active:scale-[0.97] shadow-md shadow-zinc-900/20"
               >
                 Kostenloses Gespräch buchen
                 <ArrowRight size={14} />
               </a>
               <a
                 href="#leistungen"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-white/10 text-zinc-300 text-sm font-medium hover:bg-white/5 hover:text-zinc-50 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-zinc-300 text-zinc-600 text-sm font-medium hover:bg-zinc-100 hover:text-zinc-900 transition-all duration-200 active:scale-[0.97]"
               >
                 Leistungen ansehen
               </a>
@@ -95,8 +95,8 @@ export function Hero() {
                 { value: "1 Ansprech-partner", label: "Für alles" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <p className="text-sm font-semibold text-zinc-200">{stat.value}</p>
-                  <p className="text-xs text-zinc-600">{stat.label}</p>
+                  <p className="text-sm font-semibold text-zinc-800">{stat.value}</p>
+                  <p className="text-xs text-zinc-400">{stat.label}</p>
                 </div>
               ))}
             </motion.div>
@@ -109,8 +109,8 @@ export function Hero() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="absolute -inset-3 rounded-3xl bg-gradient-to-b from-white/8 to-transparent blur-2xl" />
-              <div className="relative w-64 h-72 lg:w-72 lg:h-80 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
+              <div className="absolute -inset-3 rounded-3xl bg-gradient-to-b from-zinc-900/6 to-transparent blur-2xl" />
+              <div className="relative w-64 h-72 lg:w-72 lg:h-80 rounded-3xl overflow-hidden border border-zinc-200 shadow-2xl shadow-zinc-900/15">
                 <Image
                   src="/noah.jpg"
                   alt="Noah da Silveira"
@@ -118,19 +118,19 @@ export function Hero() {
                   className="object-cover object-top"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-100/30 via-transparent to-transparent" />
               </div>
 
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.2, duration: 0.5, ease: "easeOut" }}
-                className="absolute -bottom-4 -left-4 flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border border-white/10 bg-zinc-900/90 backdrop-blur-sm shadow-xl"
+                className="absolute -bottom-4 -left-4 flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border border-zinc-200 bg-white/95 backdrop-blur-sm shadow-lg shadow-zinc-900/8"
               >
-                <div className="w-2 h-2 rounded-full bg-emerald-400" />
+                <div className="w-2 h-2 rounded-full bg-emerald-500" />
                 <div>
-                  <p className="text-xs font-medium text-zinc-200">noah@dasilveira.de</p>
-                  <p className="text-xs text-zinc-600">Anfrage starten</p>
+                  <p className="text-xs font-medium text-zinc-700">noah@dasilveira.de</p>
+                  <p className="text-xs text-zinc-400">Anfrage starten</p>
                 </div>
               </motion.div>
             </div>

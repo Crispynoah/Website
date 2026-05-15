@@ -11,8 +11,8 @@ export function Nav() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-full max-w-2xl px-4"
     >
-      <div className="flex items-center justify-between px-5 py-3 rounded-full border border-white/8 bg-zinc-950/80 backdrop-blur-xl shadow-2xl shadow-black/50">
-        <span className="text-sm font-medium text-zinc-200 tracking-tight">
+      <div className="flex items-center justify-between px-5 py-3 rounded-full border border-zinc-200 bg-white/90 backdrop-blur-xl shadow-lg shadow-zinc-900/8">
+        <span className="text-sm font-medium text-zinc-800 tracking-tight">
           Noah da Silveira
         </span>
 
@@ -21,7 +21,7 @@ export function Nav() {
             <a
               key={item}
               href={`#${item.toLowerCase().replace(" ", "-")}`}
-              className="text-xs text-zinc-500 hover:text-zinc-200 transition-colors duration-200"
+              className="text-xs text-zinc-400 hover:text-zinc-800 transition-colors duration-200"
             >
               {item}
             </a>
@@ -30,7 +30,7 @@ export function Nav() {
 
         <a
           href="mailto:noah@dasilveira.de"
-          className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-50 text-zinc-950 text-xs font-medium hover:bg-zinc-200 transition-colors duration-200 active:scale-95"
+          className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 text-zinc-50 text-xs font-medium hover:bg-zinc-700 transition-colors duration-200 active:scale-95"
         >
           <Mail size={11} />
           Anfragen

@@ -23,14 +23,14 @@ export function About() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative"
           >
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/8 shadow-2xl shadow-black/60 max-w-sm">
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-zinc-200 shadow-xl shadow-zinc-900/10 max-w-sm">
               <Image
                 src="/noah.jpg"
                 alt="Noah da Silveira — Webdesigner"
                 fill
                 className="object-cover object-top"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/50 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-100/30 via-transparent to-transparent" />
             </div>
 
             <motion.div
@@ -38,10 +38,10 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5, ease: "easeOut" }}
-              className="absolute -bottom-6 -right-0 lg:-right-8 p-5 rounded-2xl border border-white/10 bg-zinc-900/90 backdrop-blur-sm shadow-xl max-w-[200px]"
+              className="absolute -bottom-6 -right-0 lg:-right-8 p-5 rounded-2xl border border-zinc-200 bg-white/95 backdrop-blur-sm shadow-lg shadow-zinc-900/8 max-w-[200px]"
             >
-              <p className="text-2xl font-semibold text-zinc-100">100%</p>
-              <p className="text-xs text-zinc-500 mt-0.5 leading-snug">
+              <p className="text-2xl font-semibold text-zinc-800">100%</p>
+              <p className="text-xs text-zinc-400 mt-0.5 leading-snug">
                 Individuelle Websites — kein einziges Template
               </p>
             </motion.div>
@@ -55,13 +55,13 @@ export function About() {
             className="space-y-8"
           >
             <div>
-              <p className="text-xs tracking-widest text-zinc-600 uppercase mb-3">Über mich</p>
-              <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-zinc-50 leading-tight">
+              <p className="text-xs tracking-widest text-zinc-400 uppercase mb-3">Über mich</p>
+              <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-zinc-900 leading-tight">
                 Hinter jeder Website steckt ein Mensch.
               </h2>
             </div>
 
-            <div className="space-y-4 text-zinc-400 text-sm leading-relaxed">
+            <div className="space-y-4 text-zinc-500 text-sm leading-relaxed">
               <p>
                 Ich bin Noah da Silveira — Webdesigner und Entwickler mit einem Gespür
                 für das, was wirklich zählt: Websites, die nicht nur schön aussehen,
@@ -78,8 +78,8 @@ export function About() {
             <div className="space-y-3 pt-2">
               {values.map((value) => (
                 <div key={value} className="flex items-start gap-3">
-                  <CheckCircle2 size={15} className="text-zinc-400 shrink-0 mt-0.5" />
-                  <span className="text-sm text-zinc-400">{value}</span>
+                  <CheckCircle2 size={15} className="text-zinc-500 shrink-0 mt-0.5" />
+                  <span className="text-sm text-zinc-600">{value}</span>
                 </div>
               ))}
             </div>
@@ -87,13 +87,13 @@ export function About() {
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a
                 href="mailto:noah@dasilveira.de"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-zinc-50 text-zinc-950 text-sm font-medium hover:bg-zinc-200 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 text-zinc-50 text-sm font-medium hover:bg-zinc-700 transition-all duration-200 active:scale-[0.97]"
               >
                 Schreib mir
               </a>
               <a
                 href="tel:01604874444"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-white/10 text-zinc-300 text-sm font-medium hover:bg-white/5 hover:text-zinc-50 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-zinc-300 text-zinc-600 text-sm font-medium hover:bg-zinc-100 hover:text-zinc-900 transition-all duration-200 active:scale-[0.97]"
               >
                 0160 4874444
               </a>

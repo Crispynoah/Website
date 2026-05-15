@@ -10,21 +10,21 @@ export default function Impressum() {
     <main className="min-h-screen px-6 py-24 max-w-2xl mx-auto">
       <Link
         href="/"
-        className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors mb-12 inline-block"
+        className="text-xs text-zinc-600 hover:text-zinc-700 transition-colors mb-12 inline-block"
       >
         ← Zurück
       </Link>
 
-      <h1 className="text-3xl font-semibold tracking-tight text-zinc-50 mb-10">
+      <h1 className="text-3xl font-semibold tracking-tight text-zinc-900 mb-10">
         Impressum
       </h1>
 
-      <div className="space-y-8 text-sm text-zinc-400 leading-relaxed">
+      <div className="space-y-8 text-sm text-zinc-600 leading-relaxed">
         <section className="space-y-1">
           <h2 className="text-xs tracking-widest text-zinc-600 uppercase mb-3">
             Angaben gemäß § 5 TMG
           </h2>
-          <p className="text-zinc-200 font-medium">Noah Karol da Silveira</p>
+          <p className="text-zinc-800 font-medium">Noah Karol da Silveira</p>
           <p>Engstenberger Höhe 33</p>
           <p>51519 Odenthal</p>
         </section>
@@ -37,7 +37,7 @@ export default function Impressum() {
             Telefon:{" "}
             <a
               href="tel:01604874444"
-              className="text-zinc-200 hover:text-zinc-50 transition-colors"
+              className="text-zinc-800 hover:text-zinc-900 transition-colors"
             >
               0160 4874444
             </a>
@@ -46,7 +46,7 @@ export default function Impressum() {
             E-Mail:{" "}
             <a
               href="mailto:noah@dasilveira.de"
-              className="text-zinc-200 hover:text-zinc-50 transition-colors"
+              className="text-zinc-800 hover:text-zinc-900 transition-colors"
             >
               noah@dasilveira.de
             </a>
