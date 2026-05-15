@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Mail, Phone, ArrowRight } from "lucide-react";
 
 export function Contact() {
@@ -77,13 +78,13 @@ export function Contact() {
                 </div>
               </div>
 
-              <a
-                href="mailto:noah@dasilveira.de"
+              <Link
+                href="/anfrage"
                 className="group w-full flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-zinc-900 text-zinc-50 text-sm font-medium hover:bg-zinc-700 transition-all duration-200 active:scale-[0.98] shadow-md shadow-zinc-900/15"
               >
-                Unverbindlich anfragen
+                Zum Anfrageformular
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>
