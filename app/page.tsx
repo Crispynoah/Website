@@ -6,6 +6,7 @@ import { Comparison } from "@/components/sections/comparison";
 import { Process } from "@/components/sections/process";
 import { About } from "@/components/sections/about";
 import { Contact } from "@/components/sections/contact";
+import { ContactForm } from "@/components/sections/contact-form";
 import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Process />
       <About />
       <Contact />
+      <ContactForm />
       <Footer />
     </main>
   );
