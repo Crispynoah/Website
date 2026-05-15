@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="py-8 px-6 border-t border-white/5">
@@ -12,6 +14,12 @@ export function Footer() {
           <a href="tel:01604874444" className="text-xs text-zinc-700 hover:text-zinc-400 transition-colors">
             0160 4874444
           </a>
+          <Link href="/impressum" className="text-xs text-zinc-700 hover:text-zinc-400 transition-colors">
+            Impressum
+          </Link>
+          <Link href="/datenschutz" className="text-xs text-zinc-700 hover:text-zinc-400 transition-colors">
+            Datenschutz
+          </Link>
         </div>
         <p className="text-xs text-zinc-800">© 2025 Noah da Silveira</p>
       </div>
