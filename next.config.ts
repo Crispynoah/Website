@@ -8,9 +8,6 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "bundui-images.netlify.app" },
     ],
   },
-  turbopack: {
-    root: __dirname,
-  },
 };
 
 export default nextConfig;
