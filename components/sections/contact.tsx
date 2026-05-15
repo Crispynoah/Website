@@ -5,7 +5,7 @@ import { Mail, Phone, ArrowRight } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="kontakt" className="py-32 md:py-40 px-6">
+    <section id="kontakt" className="py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

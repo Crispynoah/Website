@@ -69,7 +69,7 @@ const processData = [
 
 export function Process() {
   return (
-    <section id="prozess" className="py-32 md:py-40 px-6">
+    <section id="prozess" className="py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -71,17 +71,17 @@ const itemVariants: Variants = {
 
 export function Services() {
   return (
-    <section id="leistungen" className="py-32 md:py-40 px-6">
+    <section id="leistungen" className="py-16 md:py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mb-16"
+          className="mb-10 text-center"
         >
           <p className="text-xs tracking-widest text-zinc-400 uppercase mb-3">Leistungen</p>
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-zinc-900 max-w-2xl leading-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-zinc-900 max-w-2xl leading-tight mx-auto">
             Alles, was Ihre Website braucht — aus einer Hand.
           </h2>
         </motion.div>
