@@ -42,7 +42,7 @@ export function Comparison() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-end"
+          className="mb-8 md:mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-end"
         >
           <div>
             <p className="text-xs tracking-widest text-zinc-400 uppercase mb-3">Vorher & Nachher</p>

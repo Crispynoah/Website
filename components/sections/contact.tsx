@@ -56,7 +56,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative rounded-3xl border border-zinc-200 bg-zinc-50 p-12 md:p-16 overflow-clip shadow-sm"
+          className="relative rounded-3xl border border-zinc-200 bg-zinc-50 p-6 sm:p-10 md:p-16 overflow-clip shadow-sm"
         >
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-px bg-gradient-to-r from-transparent via-zinc-300 to-transparent" />
@@ -64,7 +64,7 @@ export function Contact() {
             <div className="absolute -bottom-32 -left-32 w-64 h-64 rounded-full bg-zinc-200/40 blur-3xl" />
           </div>
 
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Left — info */}
             <div className="space-y-6 lg:sticky lg:top-24">
               <div>
@@ -122,7 +122,7 @@ export function Contact() {
             </div>
 
             {/* Right — form */}
-            <div className="rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm">
+            <div className="rounded-2xl border border-zinc-200 bg-white p-5 md:p-8 shadow-sm">
               <AnimatePresence mode="wait">
                 {status === "success" ? (
                   <motion.div

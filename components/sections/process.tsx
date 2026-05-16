@@ -76,7 +76,7 @@ export function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mb-4 text-center"
+          className="mb-0 md:mb-4 text-center"
         >
           <p className="text-xs tracking-widest text-zinc-400 uppercase mb-3">Ablauf</p>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-zinc-900 leading-tight">
