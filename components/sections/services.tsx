@@ -131,11 +131,11 @@ export function Services() {
             </div>
           </motion.div>
 
-          {services.slice(2).map((service) => (
+          {services.slice(2).map((service, idx) => (
             <motion.div
               key={service.title}
               variants={itemVariants}
-              className="group p-6 rounded-2xl border border-zinc-200 bg-white hover:bg-zinc-50 hover:border-zinc-300 transition-all duration-300 cursor-default shadow-sm"
+              className={`group p-6 rounded-2xl border border-zinc-200 bg-white hover:bg-zinc-50 hover:border-zinc-300 transition-all duration-300 cursor-default shadow-sm${idx === services.slice(2).length - 1 ? " md:col-span-2 lg:col-span-1 lg:col-start-2" : ""}`}
             >
               <div className="flex items-start gap-4">
                 <div className="w-9 h-9 shrink-0 rounded-xl border border-zinc-200 bg-zinc-100 flex items-center justify-center group-hover:border-zinc-300 transition-colors duration-300">
