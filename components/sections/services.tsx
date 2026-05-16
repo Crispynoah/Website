@@ -122,7 +122,7 @@ export function Services() {
                 </p>
               </div>
               <Link
-                href="/anfrage"
+                href="#kontakt"
                 className="mt-6 inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors duration-200 group/link"
               >
                 Anfrage stellen

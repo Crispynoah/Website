@@ -21,7 +21,7 @@ export function Nav() {
           {["Leistungen", "Prozess", "Über mich", "Kontakt"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
+              href={`#${item.toLowerCase().replace(/ /g, "-")}`}
               className="text-xs text-zinc-400 hover:text-zinc-800 transition-colors duration-200"
             >
               {item}
@@ -30,7 +30,7 @@ export function Nav() {
         </div>
 
         <Link
-          href="/anfrage"
+          href="#kontakt"
           className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 text-zinc-50 text-xs font-medium hover:bg-zinc-700 transition-colors duration-200 active:scale-95"
         >
           <Mail size={11} />

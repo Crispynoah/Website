@@ -56,7 +56,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative rounded-3xl border border-zinc-200 bg-zinc-50 p-12 md:p-16 overflow-hidden shadow-sm"
+          className="relative rounded-3xl border border-zinc-200 bg-zinc-50 p-12 md:p-16 overflow-clip shadow-sm"
         >
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-px bg-gradient-to-r from-transparent via-zinc-300 to-transparent" />

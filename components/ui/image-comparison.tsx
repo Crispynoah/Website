@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { useState, createContext, useContext } from "react";
+import { useState, useRef, useEffect, createContext, useContext } from "react";
 import {
   motion,
   type MotionValue,
@@ -36,12 +36,25 @@ function ImageComparison({
   springOptions,
 }: ImageComparisonProps) {
   const [isDragging, setIsDragging] = useState(false);
+  const isDraggingRef = useRef(false);
+  const divRef = useRef<HTMLDivElement>(null);
   const motionValue = useMotionValue(50);
   const motionSliderPosition = useSpring(
     motionValue,
     springOptions ?? DEFAULT_SPRING_OPTIONS
   );
   const [sliderPosition, setSliderPosition] = useState(50);
+
+  // Non-passive touchmove listener so preventDefault() stops page scroll while dragging
+  useEffect(() => {
+    const el = divRef.current;
+    if (!el) return;
+    const prevent = (e: TouchEvent) => {
+      if (isDraggingRef.current || enableHover) e.preventDefault();
+    };
+    el.addEventListener("touchmove", prevent, { passive: false });
+    return () => el.removeEventListener("touchmove", prevent);
+  }, [enableHover]);
 
   const handleDrag = (event: React.MouseEvent | React.TouchEvent) => {
     if (!isDragging && !enableHover) return;
@@ -65,18 +78,19 @@ function ImageComparison({
       value={{ sliderPosition, setSliderPosition, motionSliderPosition }}
     >
       <div
+        ref={divRef}
         className={cn(
           "relative overflow-hidden select-none",
           enableHover && "cursor-ew-resize",
           className
         )}
         onMouseMove={handleDrag}
-        onMouseDown={() => !enableHover && setIsDragging(true)}
-        onMouseUp={() => !enableHover && setIsDragging(false)}
-        onMouseLeave={() => !enableHover && setIsDragging(false)}
+        onMouseDown={() => { if (!enableHover) { setIsDragging(true); isDraggingRef.current = true; } }}
+        onMouseUp={() => { if (!enableHover) { setIsDragging(false); isDraggingRef.current = false; } }}
+        onMouseLeave={() => { if (!enableHover) { setIsDragging(false); isDraggingRef.current = false; } }}
         onTouchMove={handleDrag}
-        onTouchStart={() => !enableHover && setIsDragging(true)}
-        onTouchEnd={() => !enableHover && setIsDragging(false)}
+        onTouchStart={() => { if (!enableHover) { setIsDragging(true); isDraggingRef.current = true; } }}
+        onTouchEnd={() => { if (!enableHover) { setIsDragging(false); isDraggingRef.current = false; } }}
       >
         {children}
       </div>

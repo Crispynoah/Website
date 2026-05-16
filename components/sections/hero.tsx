@@ -70,7 +70,7 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-3"
             >
               <Link
-                href="/anfrage"
+                href="#kontakt"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 text-zinc-50 text-sm font-medium hover:bg-zinc-700 transition-all duration-200 active:scale-[0.97] shadow-md shadow-zinc-900/20"
               >
                 Kostenloses Gespräch buchen
